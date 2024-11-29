@@ -1,0 +1,33 @@
+<div class="product container">
+    <div class="product__container" *ngFor="let product of breakfast">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of lunch">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of dinner">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+    </div>
+</div>
